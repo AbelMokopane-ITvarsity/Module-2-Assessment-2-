@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+          <meta charset="utf-8">
+          <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+          
+          <!-- custom css file link -->
+          <link rel="stylesheet" href="style.css">
+          
+            <style>
+                
+                 body{
+                  padding: 0;
+                  margin: 0;
+                  overflow: hidden;
+                    
+              }
+                
+                .banner1,.banner2,.banner3,.banner4{
+                    height: 100vh;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                
+                img{
+                    width: 100%;
+                    position: absolute;
+                    left: 50%
+                    top: 50%;
+                    transform: translate(-50%;-50%);
+                    animation: zoom-out 3s linear infinite;
+                    background-size: cover;
+                    height:100vh;  
+                }
+                
+                @keyframes{
+                    100%{
+                        width: 100%;
+                    }
+                }
+                
+                .text-box{
+                    width: 600px;
+                    position: absolute;
+                    top: 200px;
+                    left: 100px;
+                    color: white;
+                    animation: textup 12s linear infinite;
+                    transform: translateY(100px);
+                }
+                
+                .text-box h1{
+                    margin-bottom: 40px;
+                }
+                
+                .text-box p{
+                    font-size: 18px;
+                    line-height: 18px;
+                    margin-top: 80px;
+                }
+                
+                .text-box span{
+                    background: red;
+                    height: 1px;
+                    width: 100px;
+                    position: absolute;
+                    left: 0;
+                }
+                
+                .banner1{
+                    animation: slide1 12s linear infinite;
+                }
+                
+                .banner2{
+                    animation: slide2 12s linear infinite;
+                }
+                
+                .banner3{
+                    animation: slide3 12s linear infinite;
+                }
+                
+                .banner4{
+                    animation: slide4 12s linear infinite;
+                }
+                
+                @keyframes slide1{
+                    0%{
+                        visibility: visible;
+                    }
+                    25%{
+                        visibility: hidden;
+                    }
+                    50%{
+                        visibility: hidden;
+                    }
+                    75%{
+                        visibility: hidden;
+                    }
+                    100%{
+                        visibility: visible;
+                    }
+                }
+                
+                     @keyframes slide2{
+                    0%{
+                        visibility: hidden;
+                    }
+                    25%{
+                        visibility: hidden;
+                    }
+                    50%{
+                        visibility: visible;
+                    }
+                    75%{
+                        visibility: hidden;
+                    }
+                    100%{
+                        visibility: visible;
+                    }
+                }
+                
+                
+                     @keyframes slide3{
+                    0%{
+                        visibility: hidden;
+                    }
+                    25%{
+                        visibility: hidden;
+                    }
+                    50%{
+                        visibility: hidden;
+                    }
+                    75%{
+                        visibility: visible;
+                    }
+                    100%{
+                        visibility: hidden;
+                    }
+                }
+                
+                   @keyframes slide4{
+                    0%{
+                        visibility: hidden;
+                    }
+                    25%{
+                        visibility: hidden;
+                    }
+                    50%{
+                        visibility: hidden;
+                    }
+                    75%{
+                        visibility: hidden;
+                    }
+                    100%{
+                        visibility: visible;
+                    }
+                }
+                
+                @keyframes textup{
+                    10%{
+                        transform: translateY(0px);
+                    }
+                    100%{
+                        transform: translateY(0px;)
+                    }
+                }
+                
+                .text-box1{
+                    animation-delay: 0s;
+                }
+                .text-box2{
+                    animation-delay: 4s;
+                }
+                .text-box3{
+                    animation-delay: 8s;
+                }
+                .text-box4{
+                    animation-delay: 12s;
+                }
+                
+          </style>
+          
+      </head>
+    
+      <body>  
+          
+          <header>
+           
+              <a href="index.html" class="logo">Pine City Mall</a>
+              
+              <input type="checkbox" id="menu-bar">
+              <label for="menu-bar">Menu</label>
+              
+              <nav class="navbar">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="map.html">Map</a></li>
+                      <li><a href="#">Stores +</a>
+                            <ul>
+                                <li><a href="clothingStores.html">Clothing</a></li>
+                                <li><a href="supermarkets.html">Supermarket</a></li>
+                                <li><a href="resturants.html">Resturants</a></li>
+                                <li><a href="electronics.html">Electronic</a></li>
+                            </ul>
+                      </li>
+                      <li><a href="movies.html">Movies +</a>
+                          <ul>
+                              <li><a href="theBeekeeper.html">The Beekeeper</a></li>
+                              <li><a href="imaginary.html">Imaginary</a></li>
+                              <li><a href="civilwar.html">Civil War</a></li>
+                              <li><a href="dune.html">Dune:Part Two</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </nav>
+          </header>
+          <div class="banner1">
+              <img src="images/mall6.jpg">
+              <div class="text-box text-box1">
+                  <h1>At the Heart of it All</h1>
+                  <span></span>
+                  <p>Pine City Mall, situated at the heart of it all in Cape Town, is the most visited retail and lifestyle destination in South Africa - welcoming over 100 million visitors every year.<br>A mall like no other, Pine City has more than 1,200 retail outlets, including two anchor department stores, Galeries Lafayette and Bloomingdale's, along with over 200 international dining experiences and a wide range of entertainment and leisure attractions for families to enjoy.</p>
+              </div>
+          </div>
+             <div class="banner2">
+              <img src="images/mall2.jpg">
+              <div class="text-box text-box2">
+                  <h1>Fashion Avenue</h1>
+                  <span></span>
+                  <p>Explore more than 150 luxury shopping and dining experiences at Fashion Avenue. With inspired architecture, captivating art and stylish interiors, Fashion Avenue is the home of luxury in the Middle East.<br><br>
+
+ Browse flagship stores and exclusive concepts and products, while enjoying personalised 5-star service from the moment you arrive, including a VIP valet service, Shop & Drop with delivery, an in-mall chauffeur service, and much more.<br><br>
+
+ Take a break or finish off your shopping spree by indulging in a premium dining experience at Fashion Avenue, with an exceptional blend of culinary concepts offering the finest flavours.</p>
+              </div>
+          </div>
+             <div class="banner3">
+              <img src="images/mall16.webp">
+              <div class="text-box text box3">
+                  <h1>Dubai Aquarium & Underwater Zoo</h1>
+                  <span></span>
+                  <p>Dive into an amazing aquatic world at Pine City Aquarium & Zoo - home to thousands of aquatic animals, over 140 marine species and a 270-degree walk-through tunnel. Located within Pine City Mall, the Aquarium & Underwater Zoo features a 10-litre tank containing more than 400 Sharks and Rays, including Sand Tiger Sharks, Giant Groupers and a wide array of amazing marine life. With a host of carefully curated, immersive experiences to choose from, a spectacular aquatic adventure awaits for friends, families and everyone in between.</p>
+              </div>
+          </div>
+             <div class="banner4">
+              <img src="images/mall18.jpg">
+              <div class="text-box text-box4">
+                  <h1>Endless Family Fun, Entertainment & Hospitality</h1>
+                  <span></span>
+                  <p>Find fun, games and adventure for all the family at every turn in Pine City Mall. Zoom past an open-air track at Entrance 2, before discovering unique virtual and augmented reality experiences at VR Park, a first-of-its-kind attraction for Africa. For children aged 2 to 16 years, there's KidZania®, the ultimate children's edutainment destination, where learning and entertainment combine.<br><br>
+
+And the fun doesn't stop there! Head to Sterkinekor Cinemas at Pine City Mall and watch all the latest blockbusters, as you enjoy cinema as it should be. Athletes and enthusiasts can head to Sports District, the multi-sports complex located on the rooftop of Pine City Mall, offering a range of sports and great views.<br><br>
+Abel Mokopane is Master Developer of Pine City Mall App</p>
+              </div>
+          </div>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
